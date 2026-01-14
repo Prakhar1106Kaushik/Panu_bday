@@ -42,7 +42,7 @@ const FallingRibbon = ({ delay, left, color, direction }: { delay: number; left:
 }
 
 const Timeline = () => {
-  const { ref, inView } = useIntersectionObserver()
+  const { ref } = useIntersectionObserver()
   const [ribbons, setRibbons] = useState<Array<{ id: number; delay: number; left: number; color: string; direction: 'left' | 'right' }>>([])
 
   useEffect(() => {

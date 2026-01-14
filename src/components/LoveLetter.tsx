@@ -3,7 +3,7 @@ import { CONFIG } from '../config/constants'
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver'
 
 const LoveLetter = () => {
-  const { ref, inView } = useIntersectionObserver()
+  const { ref} = useIntersectionObserver()
 
   const words = CONFIG.loveLetter.split(' ')
 

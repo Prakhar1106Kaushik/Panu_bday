@@ -213,7 +213,7 @@ const MusicPlayer = () => {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 1, type: 'spring' }}
-        onClick={(e) => {
+        onClick={() => {
           // Unmute and play music on click
           if (audioRef.current && isMusicPlaying) {
             audioRef.current.muted = false
